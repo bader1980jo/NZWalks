@@ -49,10 +49,10 @@ namespace NZWalks.API.Controllers
         public async Task<IActionResult> AddAsync(AddWalkDifficultyRequest addWalkDifficultyRequest)
         {
             //validate the incoming request
-            if (! ValidateAddAsync(addWalkDifficultyRequest))
-            {
-                return BadRequest(ModelState);
-            }
+            //if (! ValidateAddAsync(addWalkDifficultyRequest))
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
 
             //convert dto to domain
@@ -79,10 +79,10 @@ namespace NZWalks.API.Controllers
         public async Task<IActionResult> UpdateWalkDifficultyAsync(Guid id, [FromBody] UpdateWalkDifficultyRequest updateWalkDifficultyRequest)
         {
             //validate the incoming request
-            if (!ValidateUpdateWalkDifficultyAsync(updateWalkDifficultyRequest))
-            {
-                return BadRequest(ModelState);
-            }
+            //if (!ValidateUpdateWalkDifficultyAsync(updateWalkDifficultyRequest))
+            //{
+            //    return BadRequest(ModelState);
+            //}
 
 
             // convert dto to domain
